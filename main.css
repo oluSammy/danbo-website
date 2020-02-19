@@ -19,7 +19,7 @@ html,body{
 }
 .who-we-are{
     border-radius: 1rem;
-    padding: 2rem !important;
+    padding: 2rem 1rem 9.8rem 1rem !important;
 }
 .about-container{
     padding: 3rem 0 5rem 0;
@@ -72,6 +72,12 @@ html,body{
 .mt-2{
     margin-top: 1rem;
 }
-/* .about-us{
-    margin: -3rem 0 5rem 0 !important;
-} */
+.justify-text{
+    text-align: justify;
+}
+.pd-sm{
+    padding-bottom: 3rem;
+}
+.pd-sm-1{
+    padding-bottom: 4rem;
+}
