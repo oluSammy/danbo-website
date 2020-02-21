@@ -56,6 +56,9 @@ html,body{
     border-radius: 1.4rem !important;
     border: 1px solid blue;
 }
+.card-radius{
+    border-radius: 1.4rem !important;
+}
 .parent-name{
     font-size: 2rem;
 }
@@ -75,9 +78,18 @@ html,body{
 .justify-text{
     text-align: justify;
 }
+.pd-s-0{
+    padding-bottom: .5rem;
+}
+.pd-s{
+    padding-bottom: 2rem !important;
+}
 .pd-sm{
-    padding-bottom: 3rem;
+    padding-bottom: 3rem !important;
 }
 .pd-sm-1{
     padding-bottom: 4rem;
 }
+/* .parallax-container {
+      height: 600px !important;
+} */
