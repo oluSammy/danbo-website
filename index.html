@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-        <link rel="stylesheet" href="main.css">
+      <!-- Custom Css -->
+      <link rel="stylesheet" href="./css/main.css">
+
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <!-- Google Font -->
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-
       <link href="https://fonts.googleapis.com/css?family=Cormorant:400,500,600&display=swap" rel="stylesheet">
       
       <!-- font awesome -->
@@ -24,7 +24,7 @@
     </head>
 
     <body>
-        <!-- NAV BAR -->
+        <!-- NAV BAR: Starts -->
         <div class="navbar-fixed">
             <nav class="indigo darken-2" style="height: 5rem;">
                 <div class="container">
@@ -34,7 +34,7 @@
                             <i class="material-icons">menu</i>
                         </a>
                         <ul class="hide-on-med-and-down right">
-                            <li><a href="#aboutus">About Us</a></li>
+                            <li><a href="./pages/aboutus.html">About Us</a></li>
                             <li><a class='dropdown-trigger' href="#" data-target='dropdown2'>Our Schools</a> </li>                            
                             <!-- <li><a href="#search">Our Schools</a></li> -->
                             <li><a href="#popular">Admissions</a></li>
@@ -63,13 +63,14 @@
             </nav>
         </div>
         <ul class="sidenav" id="mobile-links">
-            <li><a href="#aboutus">About Us</a></li>
-                            <li><a class='dropdown-trigger' href='#ourschools' data-target='dropdown1'>Our Schools</a> </li>
-                            <!-- <li><a href="#search">Our Schools</a></li> -->
-                            <li><a href="#popular">Admissions</a></li>
-                            <li><a href="#contacts">Contacts</a></li>
-                            <li><a href="#contact">News</a></li>
+            <li><a href="./pages/aboutus.html">About Us</a></li>
+            <li><a class='dropdown-trigger' href='#ourschools' data-target='dropdown1'>Our Schools</a> </li>
+            <!-- <li><a href="#search">Our Schools</a></li> -->
+            <li><a href="#popular">Admissions</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#contact">News</a></li>
         </ul>
+        <!-- NAV BAR: Ends -->
 
         <!-- Section: SLIDER -->
         <section class="slider">
@@ -79,28 +80,25 @@
                   <img src="img/slide01.JPG" class="responsive-img img-slide" alt="">
                 </li>
                 <li>
-                  <img src="img/slide-2.png"class="responsive-img img-slide">  <!-- random image -->                 
+                  <img src="img/slide-2.jpg"class="responsive-img img-slide">  <!-- random image -->                 
                 </li>
                 <li>
-                  <img src="img/slide03.png" class="responsive-img img-slide"> <!-- random image -->                  
+                  <img src="img/slide03.jpg" class="responsive-img img-slide"> <!-- random image -->                  
                 </li>
                 <li>
-                    <img src="img/slide04.png" class="responsive-img img-slide"> <!-- random image -->                    
-                </li>
+                    <img src="img/slide04.jpg" class="responsive-img img-slide"> <!-- random image -->                    
+                </li>                
                 <li>
-                    <img src="img/slide-new.png" class="responsive-img img-slide"> <!-- random image -->                    
-                </li>
-                <li>
-                    <img src="img/slide06.png" class="responsive-img img-slide"> <!-- random image -->                    
+                    <img src="img/slide06.jpg" class="responsive-img img-slide"> <!-- random image -->                    
                 </li>
               <li>
-                <img src="img/slide07.png" class="responsive-img img-slide"> <!-- random image -->                
+                <img src="img/slide07.jpg" class="responsive-img img-slide"> <!-- random image -->                
               </li>
               <li>
                 <img src="img/slide08.jpg"class="responsive-img img-slide">  <!-- random image -->                
               </li>
               <li>
-                <img src="img/slide09.png" class="responsive-img img-slide"> <!-- random image -->                
+                <img src="img/slide09.jpg" class="responsive-img img-slide"> <!-- random image -->                
               </li>
             </ul>
         </section>
@@ -226,7 +224,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12 l4">
-                        <div class="card">
+                        <div class="card neg-pad-1">
                             <div class="card-image">
                                 <img src="img/danbo-international-school-gallery-03JPG.jpg" class="materialboxed" alt="">
                             </div>
@@ -248,7 +246,7 @@
                         </div>
                     </div>
                     <div class="col s12 l4">
-                        <div class="card pd-s-0">
+                        <div class="card ps-s">
                             <div class="card-image">
                                 <img src="./img/danbo-international-school-sports.JPG" class="materialboxed" alt="">
                             </div>
@@ -534,57 +532,11 @@
 
 
 
-        <!-- Compiled and minified JavaScript -->
+    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        var elems = document.querySelector('.sidenav');
-        M.Sidenav.init(elems, {
-            edge: 'right',
-            inDuration: 750,
-            outDuration: 500
-        });
-
-        var slider = document.querySelectorAll('.slider');
-        var instances = M.Slider.init(slider, {
-            indicators: false,
-            transition: 500,
-            interval:   4000
-        });
-
-        var elems1 = document.querySelectorAll('.materialboxed');
-        var instances = M.Materialbox.init(elems1, {});
-
-        var elems5 = document.querySelectorAll('.scrollspy');
-        var instances = M.ScrollSpy.init(elems5, {});
-
-        var parallax = document.querySelectorAll('.parallax');
-        var instances = M.Parallax.init(parallax, {});
-
-         document.addEventListener('DOMContentLoaded', function() {
-             var carousel = document.querySelectorAll('.carousel');
-              var instances = M.Carousel.init(carousel, {
-                
-              });
-            // var instance = M.Carousel.init(carousel, {
-            //     fullWidth: true,
-            //     indicators: true,
-            //     autoplay: true
-            // });   
-         });       
-        
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems6 = document.querySelectorAll('.dropdown-trigger');
-            var instances = M.Dropdown.init(elems6, {
-                constrainWidth: false,
-                coverTrigger: false,
-                hover: true,
-                inDuration: 600
-            });
-        });
-        var tabs = document.querySelectorAll('.tabs');
-        var instances = M.Tabs.init(tabs, {});
-    </script>
+    
+    <!--Custom Js File  -->
+    <script src="./js/index.js"></script>
     </body>
   </html>
 
