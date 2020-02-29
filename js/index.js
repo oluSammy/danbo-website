@@ -1,4 +1,4 @@
-var elems = document.querySelector('.sidenav');
+var elems = document.querySelectorAll('.sidenav');
 M.Sidenav.init(elems, {
     edge: 'right',
     inDuration: 750,
@@ -45,3 +45,35 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 var tabs = document.querySelectorAll('.tabs');
 var instances = M.Tabs.init(tabs, {});
+
+const counting = (id, start, end, duration)=> {
+    let obj = document.getElementById(id);
+    let current = start;
+    let range = end - start;
+    let increment = end > start ? 1 : -1
+    let step = Math.abs(Math.floor(duration/range));
+    let timer = setInterval(()=>{
+        current += increment;
+        obj.textContent = current;
+        if(current == end){
+            clearInterval(timer)
+        }
+    }, step)
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+   
+    counting('count-one', 1, 367, 8000);    
+    counting('count-two', 1, 8, 3000);  
+    counting('count-three', 1, 7638, 9000);  
+    counting('count-four', 1, 100, 900);  
+
+});
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', ()=>{
+//     counting('count-two', 1, 1000, 300);    
+// })
