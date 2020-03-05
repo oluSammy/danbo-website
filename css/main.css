@@ -85,15 +85,31 @@ html,body{
 .pd-sm-1{
     padding-bottom: 4rem;
 }
+.no-margin-top{
+    margin-top: 0 !important;
+}
+.m-right{
+    margin-right: .5rem;
+}
+.fa-icon{
+    
+}
+
 .neg-mar-1{
     margin-top: -12rem;
     /* padding-bottom: 20rem; */
+}
+.neg-mar-2{
+    margin-top: -5rem;
 }
 .pd-lg{
     padding-top: 10rem;
 }
 .m-top{
     margin-top: 3rem;
+}
+.m-top-1{
+    margin-top: 5rem;
 }
 .s-text{
     font-size: 1.2rem;
@@ -115,8 +131,7 @@ html,body{
         to right bottom, 
         #4d4dffcc,
         #0000e6d0),
-        url('../img/test.jpg');
-        height: 63vh;
+        url('../img/test.jpg');        
         background-size: cover;
         background-position: top;
         clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
@@ -127,6 +142,9 @@ html,body{
 }
 .content{
     padding-top: 10rem;
+}
+.pd-top-lg{
+    padding-top: 16rem;
 }
 .count{
     font-size: 1.5rem;
@@ -175,6 +193,9 @@ html,body{
     animation-timing-function: ease-in-out; 
 }
 
+.award-txt{
+    font-size: 1rem;
+}
 @keyframes moveInRight{
     0%{
         opacity: 0;
@@ -215,4 +236,10 @@ html,body{
         opacity: 1;
         transform: translateY(0);
     }
+}
+.testimonial-padding{
+    padding: 2rem;
+}
+.testimonial-txt{
+    font-style: italic;
 }

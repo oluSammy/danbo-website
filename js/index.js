@@ -26,11 +26,12 @@ var instances = M.Parallax.init(parallax, {});
       var instances = M.Carousel.init(carousel, {
         
       });
-    // var instance = M.Carousel.init(carousel, {
-    //     fullWidth: true,
-    //     indicators: true,
-    //     autoplay: true
-    // });   
+     var instance = M.Carousel.init(carousel, {
+        //  fullWidth: true,
+        //  indicators: true,
+         autoplay: true,
+         numVisible: 3
+     });   
  });       
 
 
