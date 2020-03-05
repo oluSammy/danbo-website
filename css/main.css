@@ -237,6 +237,9 @@ html,body{
         transform: translateY(0);
     }
 }
+.section-awards{
+    opacity: o.6 !important;
+}
 .testimonial-padding{
     padding: 2rem;
 }
