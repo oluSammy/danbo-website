@@ -134,7 +134,7 @@ html,body{
         url('../img/test.jpg');        
         background-size: cover;
         background-position: top;
-        clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
 
 }
 .section-more{
@@ -245,4 +245,9 @@ html,body{
 }
 .testimonial-txt{
     font-style: italic;
+}
+
+.quick-links:hover{    
+    text-decoration: underline;
+    color: red !important;
 }
