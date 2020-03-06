@@ -116,7 +116,7 @@ html,body{
 }
 .header{
     /* margin-top: -3rem; */
-    height: 90vh;
+    height: 80vh;
     background-image: linear-gradient( 
         to right bottom, 
         #4d4dffcc,
@@ -124,7 +124,7 @@ html,body{
         url('../img/test.jpg');
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
 }
 .para-overlay{
     background-image: linear-gradient( 
