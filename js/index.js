@@ -1,5 +1,3 @@
-
-
  document.addEventListener('DOMContentLoaded', function() {
      var carousel = document.querySelectorAll('.carousel');
       var instances = M.Carousel.init(carousel, {
@@ -61,9 +59,11 @@ const counting = (id, start, end, duration)=> {
     let step = Math.abs(Math.floor(duration/range));
     let timer = setInterval(()=>{
         current += increment;
-        obj.textContent = current;
+        // obj.textContent = current;
         if(current == end){
             clearInterval(timer)
         }
     }, step)
 }
+
+// const 

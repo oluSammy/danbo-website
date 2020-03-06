@@ -250,4 +250,5 @@ html,body{
 .quick-links:hover{    
     text-decoration: underline;
     color: red !important;
+    /* transform: scale(.9); */
 }
